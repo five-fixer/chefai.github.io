@@ -17,6 +17,20 @@
       font-family: "Mulish", sans-serif;
     }
 
+    .tbody {
+      margin-top: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "Mulish", sans-serif;
+    }
+
+    .logo {
+      width: 360px;
+      height: 360px;
+    }
+
     .title {
       text-align: center;
       font-family: 'Mulish';
@@ -25,13 +39,137 @@
       font-size: 48px;
       line-height: 56px;
       color: #6B4EFF;
+    
+    }
+
+    /*màn hd (1920 x 1080)*/
+    @media screen and (max-width: 1920px) {
+      .title {
+        font-size: 48px;
+        text-align: center;
+        color: #6B4EFF;
+       
+      }
+
+      .logo {
+        width: 340px;
+        height: 340px;
+      }
+
+      .tbody {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mulish", sans-serif;
+      }
+
+
+    }
+
+    /*Ipad pro (1366 x 1024)*/
+    @media screen and (max-width: 1366px) {
+      .title {
+        font-size: 44px;
+        text-align: center;
+        color: #6B4EFF;
+      }
+
+      .logo {
+        width: 320px;
+        height: 320px;
+      }
+
+      .tbody {
+        margin-top: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mulish", sans-serif;
+      }
+    }
+
+    /*Ipad ngang(1024 x 768)*/
+    @media screen and (max-width: 1024px) {
+      .title {
+        font-size: 42px;
+        text-align: center;
+        color: #6B4EFF;
+      }
+
+      .logo {
+        width: 300px;
+        height: 300px;
+      }
+
+      .tbody {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mulish", sans-serif;
+      }
+    }
+
+    /*Ipad dọc(768 x 1024)*/
+    @media screen and (max-width: 768px) {
+      .title {
+        font-size: 38px;
+        text-align: center;
+        color: #6B4EFF;
+      }
+
+      .logo {
+        width: 280px;
+        height: 280px;
+      }
+
+      .tbody {
+        margin-top: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mulish", sans-serif;
+      }
+    }
+
+    /*Iphone(480 x 640)*/
+    @media screen and (max-width: 420px) {
+      .title {
+        font-size: 32px;
+        text-align: center;
+        color: #6B4EFF;
+        width: 260px;
+      }
+
+      .logo {
+        width: 230px;
+        height: 230px;
+      }
+
+      .tbody {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mulish", sans-serif;
+      }
+
+     
     }
   </style>
 </head>
 
 <body>
-  <h3 class="title">Xác thực email thành công</h3>
-  <img src="logo.png" width="30%" />
+  <div class="tbody">
+    <div class="title">Xác thực email thành công</div>
+    <img class="logo" src="logo.png" />
+  </div>
 
 </body>
 

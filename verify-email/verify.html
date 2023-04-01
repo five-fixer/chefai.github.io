@@ -17,6 +17,14 @@
             font-family: "Mulish", sans-serif;
         }
 
+        .tbody {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Mulish", sans-serif;
+        }
+
         .text-verify {
             font-family: 'Inter';
             font-style: normal;
@@ -26,14 +34,195 @@
             text-align: center;
             color: #303437;
         }
+
+        .logo {
+            width: 165px;
+            height: 165px;
+        }
+
+        .wallet {
+            width: 185px;
+            height: 185px;
+            margin-top: 30px;
+        }
+
+        /*màn hd (1920 x 1080)*/
+        @media screen and (max-width: 1920px) {
+            .text-verify {
+                font-size: 24px;
+                text-align: center;
+                color: #303437;
+            }
+
+            .logo {
+                width: 160px;
+                height: 160px;
+            }
+
+            .wallet {
+                width: 200px;
+                height: 200px;
+                margin-top: 17px;
+            }
+
+            .tbody {
+                margin-top: 4px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: "Mulish", sans-serif;
+            }
+
+            .textBody {
+                margin-top: 5px;
+            }
+        }
+
+        /*Ipad pro (1366 x 1024)*/
+        @media screen and (max-width: 1366px) {
+            .text-verify {
+                font-size: 20px;
+                text-align: center;
+                color: #303437;
+            }
+
+            .logo {
+                width: 145px;
+                height: 145px;
+            }
+
+            .wallet {
+                width: 165px;
+                height: 165px;
+                margin-top: 30px;
+            }
+
+            .tbody {
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: "Mulish", sans-serif;
+            }
+
+            .textBody {
+                margin-top: 5px;
+            }
+        }
+
+        /*Ipad ngang(1024 x 768)*/
+        @media screen and (max-width: 1024px) {
+            .text-verify {
+                font-size: 18px;
+                text-align: center;
+                color: #303437;
+            }
+
+            .logo {
+                width: 130px;
+                height: 130px;
+            }
+
+            .wallet {
+                width: 145px;
+                height: 145px;
+                margin-top: 30px;
+            }
+
+            .tbody {
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: "Mulish", sans-serif;
+            }
+
+            .textBody {
+                margin-top: 5px;
+            }
+        }
+
+        /*Ipad dọc(768 x 1024)*/
+        @media screen and (max-width: 768px) {
+            .text-verify {
+                font-size: 16px;
+                text-align: center;
+                color: #303437;
+            }
+
+            .logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            .wallet {
+                width: 135px;
+                height: 135px;
+                margin-top: 110px;
+            }
+
+            .tbody {
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: "Mulish", sans-serif;
+            }
+
+            .textBody {
+                margin-top: 20px;
+            }
+        }
+
+        /*Iphone(480 x 640)*/
+        @media screen and (max-width: 420px) {
+            .text-verify {
+                font-size: 12px;
+                text-align: center;
+                color: #303437;
+            }
+
+            .logo {
+                width: 70px;
+                height: 70px;
+            }
+
+            .wallet {
+                width: 80px;
+                height: 80px;
+                margin-top: 30px;
+            }
+
+            .tbody {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: "Mulish", sans-serif;
+            }
+
+            .textBody {
+                margin-top: 5px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <img src="logo.png" width="8%" />
-    <img src="Wallet.png" width="15%" />
-    <div class="text-verify">Email xác thực đã hết hạn.</div>
-    <div class="text-verify">Bạn vui lòng trở lại Chef AI để gửi lại email.</div>
+    <div class="tbody">
+        <img class="logo" src="logo.png" />
+        <img class="wallet" src="Wallet.png" />
+        <div class="textBody">
+            <div class="text-verify">Email xác thực đã hết hạn.</div>
+            <div class="text-verify">Bạn vui lòng trở lại Chef AI để gửi lại email.</div>
+        </div>
+
+    </div>
 
 </body>
 
